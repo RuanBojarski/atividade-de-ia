@@ -1,0 +1,95 @@
+/* Paleta */
+:root {
+    --cor-primaria: #e63946;
+    --cor-fundo: #000;
+    --cor-secundaria: #1d1d1d;
+    --cor-texto: #fff;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+  }
+  
+  header {
+    background-color: var(--cor-primaria);
+    padding: 1rem;
+    text-align: center;
+    color: var(--cor-fundo);
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+  }
+  
+  .setup-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+  }
+  
+  figure {
+    flex: 1;
+    max-width: 300px;
+    background-color: var(--cor-secundaria);
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  figure:hover {
+    transform: scale(1.05);
+  }
+  
+  figure img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .pecas {
+    flex: 1;
+    background-color: var(--cor-secundaria);
+    padding: 1rem;
+    border-radius: 10px;
+  }
+  
+  .pecas ul {
+    list-style: circle;
+    padding-left: 1.2rem;
+  }
+  
+  .jogos nav {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .jogos a {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto);
+    padding: 1rem;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  .jogos a:hover {
+    background-color: var(--cor-primaria);
+    color: var(--cor-fundo);
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--cor-secundaria);
+    margin-top: 2rem;
+  }
+  
